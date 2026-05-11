@@ -1,0 +1,39 @@
+/* Sivun taustaväri ja tekstin väri */
+body {
+    background-color: #f2f4f7;
+    color: #333333;
+    margin-left: 64px;
+    margin-right: 64px;
+    font-family: Arial, sans-serif;
+}
+
+/* Otsikoiden väri */
+h1, h2, h3, h4, h5, h6 {
+    color: #1f4e79;
+}
+
+/* Otsikoiden fonttikoot */
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+/* Section-elementtien tyyli */
+section {
+    background-color: #ffffff;
+    border: 1px solid #cfd6dd;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
