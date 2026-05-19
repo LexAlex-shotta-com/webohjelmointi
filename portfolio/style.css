@@ -1,59 +1,110 @@
+/* ====== Perustyyli ====== */
 body {
     background-color: #f2f4f7;
     color: #333333;
-    margin-left: 64px;
-    margin-right: 64px;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: "MyBody", sans-serif;
+
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+    grid-template-columns: 12em auto;
+    grid-template-rows: 3em auto 2em;
 }
 
-/* Otsikoiden väri */
+/* ====== Fontit ====== */
+@font-face {
+    font-family: "MyHeading";
+    src: url("kaunokirjoitus.ttf");
+}
+
+@font-face {
+    font-family: "MyBody";
+    src: url("kaunokirjoitus.ttf");
+}
+
+/* ====== Otsikot ====== */
 h1, h2, h3, h4, h5, h6 {
-    color: #b22222; /* punainen sävy */
+    color: #b22222;
+    font-family: "MyHeading", cursive;
 }
 
-/* Otsikoiden fonttikoot */
-h1 {
-    font-size: 60px;
+h1 { font-size: 60px; }
+h2 { font-size: 48px; }
+h3 { font-size: 32px; }
+h4 { font-size: 18px; }
+
+/* ====== Layout-elementit ====== */
+header {
+    grid-area: header;
+    background: #333;
+    color: white;
+    padding: 0.5em 1em;
 }
 
-h2 {
-    font-size: 48px;
+.portfolio-nav {
+    grid-area: nav;
+    background: #eee;
+    padding: 1em;
 }
 
-h3 {
-    font-size: 32px;
+.portfolio-nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-h4 {
-    font-size: 18px;
+.portfolio-nav li {
+    margin-bottom: 0.7em;
 }
 
-/* Section-elementtien tyyli */
+.portfolio-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    grid-area: main;
+    padding: 1.5em;
+}
+
+footer {
+    grid-area: footer;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+
+/* ====== Section-elementit ====== */
 section {
     background-color: #ffffff;
-    border: 1px solid #9acd32; /* vihreä sävy */
+    border: 1px solid #9acd32;
     padding: 16px;
     margin-bottom: 16px;
     border-radius: 8px;
 }
 
-/* Linkit */
+/* ====== Linkit ====== */
 a {
-    color: #228b22; /* vihreä */
+    color: #228b22;
     text-decoration: none;
 }
 
 a:hover {
-    color: #32cd32; /* kirkkaampi vihreä */
+    color: #32cd32;
 }
 
 a:visited {
-    color: #808080; /* keskiharmaa */
+    color: #808080;
 }
 
-/* Painikkeet */
+/* ====== Painikkeet ====== */
 button {
-    background-color: #b22222; /* punainen */
+    background-color: #b22222;
     color: white;
     border: none;
     padding: 10px 18px;
@@ -62,38 +113,18 @@ button {
 }
 
 button:hover {
-    background-color: #ff6347; /* kirkkaampi punainen */
+    background-color: #ff6347;
 }
 
-/* Lomakekenttien focus */
+/* ====== Lomakekenttien focus ====== */
 input:focus,
 textarea:focus,
 select:focus {
-    background-color: #fff9c4; /* vaaleankeltainen */
+    background-color: #fff9c4;
     outline: 2px solid #9acd32;
 }
 
-/* Jokaisen listan viimeinen li kursiiviksi */
+/* ====== Listojen viimeinen li kursiiviksi ====== */
 li:last-child {
     font-style: italic;
-}
-/* Otsikkofontti */
-@font-face {
-    font-family: "MyHeading";
-    src: url("fonts/Bangers-Regular.ttf");
-}
-
-/* Leipätekstifontti */
-@font-face {
-    font-family: "MyBody";
-    src: url("fonts/Roboto-Regular.ttf");
-}
-/* Leipäteksti koko sivulle */
-body {
-    font-family: "MyBody", sans-serif;
-}
-
-/* Kaikki otsikot */
-h1, h2, h3, h4, h5, h6 {
-    font-family: "MyHeading", cursive;
 }
