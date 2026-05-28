@@ -1,24 +1,157 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="video, videokuvaus, telakka">
-        <meta name="description" content="video websivu">
-<meta name="author" content="Alex Ahonen">
-        <title>Allun portfolio</title>
-        <link href="style.css" rel="stylesheet">'
-        <link rel="icon" href="paint.png" type="image/png">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="fi">
 
-    <body>
-        <h1>Allun portfolio!</h1>
-        <a href="../cv.html">etusivu</a>
-        <a href="../työkokemus.html">työkokemus</a>
-        <a href="index.html">portfolio</a>
-        <p>Tämä on portfolio sivu joka sisältää webohjelmoinnin tehtäviä.</p>
-        <a href="keskustelu.html">keskustelu</a>
-        <video src="../video.MOV" width="600" height="600" autoplay muted controls></video>
-    
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="video, videokuvaus, telakka">
+    <meta name="description" content="video websivu">
+    <meta name="author" content="Alex Ahonen">
+
+    <title>Allun portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="paint.png" type="image/png">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background-color: #f2f4f7;
+            color: #140c0c;
+            font-family: sans-serif;
+
+            display: grid;
+
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "footer footer";
+
+            grid-template-columns: 220px 1fr;
+            grid-template-rows: 80px 1fr 60px;
+        }
+
+        header {
+            grid-area: header;
+
+            background-color: #1377e9;
+            color: white;
+
+            padding: 20px;
+        }
+
+        nav {
+            grid-area: nav;
+
+            background-color: #0c0d0e;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #66b3ff;
+        }
+
+        main {
+            grid-area: main;
+
+            padding: 20px;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+
+            background-color: #003677;
+            color: white;
+
+            padding: 15px;
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Allun portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../cv.html">Etusivu</a></li>
+            <li><a href="../työkokemus.html">Työkokemus</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="keskustelu.html">Keskustelu</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Mediasivu</h2>
+
+        <p>
+            Tämä on portfolio-sivu, joka sisältää webohjelmoinnin tehtäviä.
+        </p>
+
+        <video src="../video.MOV" controls autoplay muted width="600">
+        </video>
+    </main>
+
+    <footer>
+        <a href="https://etai.edu.turku.fi/mod/page/view.php?id=53740&forceview=1">
+            Moodle
+        </a>
+
+        <a href="https://tai.fi/">
+            Turun ammatti-instituutti
+        </a>
+
+        <a href="https://turku.inschool.fi/">
+            Wilma
+        </a>
+    </footer>
+
+</body>
+
 </html>

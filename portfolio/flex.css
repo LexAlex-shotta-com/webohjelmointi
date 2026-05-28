@@ -1,27 +1,20 @@
-/* Header */
-header {
-    background-color: #222;
-    color: white;
+.games {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 20px;
     padding: 20px;
-    text-align: center;
 }
 
-/* Footer */
-footer {
-    background-color: #222;
-    color: white;
+.card {
+    width: 250px;
+
+    background-color: #498aeb;
+    border: 2px dashed #000000;
+
     padding: 20px;
+    border-radius: 10px;
+
     text-align: center;
-}
-
-/* Footerin linkit */
-footer a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #9acd32; /* kevyt vihreä hover-efekti */
 }
