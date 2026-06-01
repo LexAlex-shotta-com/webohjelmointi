@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="fi">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="video, videokuvaus, telakka">
-    <meta name="description" content="video websivu">
-    <meta name="author" content="Alex Ahonen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävälista</title>
+</head>
+<body>
 
-    <title>Allun portfolio</title>
+    <nav>
+        <a href="index.html">Etusivu</a>
+        <a href="tehtävälista.html">Tehtävälista</a>
+    </nav>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="paint.png" type="image/png">
+    <h1>Tehtävälista</h1>
 
-    <style>
+    <ul id="tehtavalista"></ul>
+
+    <input type="text" id="uusiTehtava">
+    <button onclick="lisaa()">Lisää</button>
+
+    <script src="tehtavalista.js"></script>
+
+     <style>
         body {
             margin: 0;
             min-height: 100vh;
@@ -109,50 +118,14 @@
             text-decoration: underline;
         }
     </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>Allun portfolio</h1>
-    </header>
-
     <nav>
-        <ul>
-            <li><a href="../cv.html">Etusivu</a></li>
-            <li><a href="../työkokemus.html">Työkokemus</a></li>
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="keskustelu.html">Keskustelu</a></li>
-            <li><a href="muuttujat.html" class="active">muuttujia ja tietotyyppejä</a></li>
-        </ul>
+        <a href="../cv.html">CV</a>
+        <a href="../työkokemus.html">Työkokemus</a>
+        <a href="index.html">Portfolio</a>
+        <a href="keskustelu.html">keskustelu</a>
+        <a href="tehtävälista.html">Tehtävälista</a>
     </nav>
 
-    <main>
-        <h2>Mediasivu</h2>
-
-        <p>
-            Tämä on portfolio-sivu, joka sisältää webohjelmoinnin tehtäviä.
-        </p>
-
-        <video src="../video.MOV" controls autoplay muted width="600">
-        </video>
-    </main>
-
-    <footer>
-        <a href="https://etai.edu.turku.fi/mod/page/view.php?id=53740&forceview=1">
-            Moodle
-        </a>
-
-        <a href="https://tai.fi/">
-            Turun ammatti-instituutti
-        </a>
-
-        <a href="https://turku.inschool.fi/">
-            Wilma
-        </a>
-    </footer>
-
+</head>
 </body>
-
 </html>
