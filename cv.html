@@ -4,27 +4,108 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="CV, curriculum vitae">
     <meta name="description" content="CV websivu">
-<meta name="author" content="Alex Ahonen">
+    <meta name="author" content="Alex Ahonen">
+
     <title>CV - Alex Ahonen</title>
-    <link href="portfolio/style.css" rel="stylesheet">
+
     <link rel="icon" href="paint.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background-color: #f2f4f7;
+            color: #140c0c;
+            font-family: sans-serif;
+
+            display: grid;
+
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "footer footer";
+
+            grid-template-columns: 220px 1fr;
+            grid-template-rows: 80px 1fr 60px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #1377e9;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #0c0d0e;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #66b3ff;
+        }
+
+        main {
+            grid-area: main;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #003677;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
+
 <body>
-<a href="työkokemus.html">työkokemus</a>
-        <a href="portfolio/index.html">portfolio</a>
-        <p>Tämä on portfolio sivu joka sisältää webohjelmoinnin tehtäviä.</p>
-        <a href="portfolio/keskustelu.html">keskustelu</a>
+
+<header>
     <h1>Alex Ahonen - CV</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="tyokokemus.html">Työkokemus</a></li>
+        <li><a href="portfolio/index.html">Portfolio</a></li>
+        <li><a href="portfolio/keskustelu.html">Keskustelu</a></li>
+    </ul>
+</nav>
+
+<main>
 
     <h2>Henkilötiedot</h2>
-    <p>Nimi: Alex Nkosinathi Ahonen</p>
-    <p>Sähköposti: ahonealex@gmail.com</p>
+    <p><strong>Nimi:</strong> Alex Nkosinathi Ahonen</p>
+    <p><strong>Sähköposti:</strong> ahonealex@gmail.com</p>
 
     <h2>Profiili</h2>
     <p>
-        Olen IT-alan opiskelija, joka on kiinnostunut tietotekniikasta ja uusien taitojen oppimisesta, ja vapaa ajallani keskityn urheilu median tekoon.
-        Olen luotettava ja motivoitunut kehittämään osaamistani työelämää varten.
+        Olen IT-alan opiskelija, joka on kiinnostunut tietotekniikasta ja uusien taitojen oppimisesta.
+        Vapaa-ajallani keskityn urheilumedian tekemiseen. Olen luotettava ja motivoitunut
+        kehittämään osaamistani työelämää varten.
     </p>
 
     <h2>Koulutus</h2>
@@ -37,7 +118,8 @@
     <ul>
         <li>
             Henkilökohtainen avustaja<br>
-            Työskentelin tädilleni henkilökohtaisena avustajana ja autoin arjen askareissa. Olen myös ollut TET-harjoittelussa elektroniikka ja urheiluvälineliikkeessä. 
+            Työskentelin tädilleni henkilökohtaisena avustajana ja autoin arjen askareissa.
+            Olen myös ollut TET-harjoittelussa elektroniikka- ja urheiluvälineliikkeessä.
         </li>
     </ul>
 
@@ -46,14 +128,20 @@
         <li>Perustaidot tietokoneen käytössä</li>
         <li>HTML-perusteet</li>
         <li>Hyvä oppimiskyky</li>
-        <li>Ollut ylen suorassa lähetyksessä</li>
+        <li>Ollut Ylen suorassa lähetyksessä</li>
     </ul>
 
     <h2>Kielet</h2>
     <ul>
         <li>Suomi (äidinkieli)</li>
-        <li>Englanti (alkuperäinen äidinkieli)</li>
+        <li>Englanti (äidinkielen tasoinen)</li>
     </ul>
+
+</main>
+
+<footer>
+    © 2025 Alex Ahonen
+</footer>
 
 </body>
 </html>

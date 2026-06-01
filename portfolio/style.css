@@ -19,11 +19,14 @@ body {
 
     grid-template-areas:
         "header header header"
-        "nav main aside"
+        "nav nav nav"
+        "aside main main"
         "footer footer footer";
 
     grid-template-columns: 200px 1fr 250px;
-    grid-template-rows: 80px 1fr 60px;
+    grid-template-rows: 80px 80px 1fr 60px; 
+    
+
 }
 
 /* ====== Fontit ====== */
@@ -57,7 +60,10 @@ header {
     padding: 15px;
     border-radius: 8px;
 }
+nav {
+    grid-area: nav;
 
+}
 main {
     grid-area: main;
     background-color: white;
@@ -162,4 +168,37 @@ select:focus {
 /* ====== Viimeinen listaelementti ====== */
 li:last-child {
     font-style: italic;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    background: #0077cc;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.main-nav a:hover {
+    background: #005fa3;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    width: 200px;
+    padding: 15px;
+}
+
+main {
+    flex: 1;
+    padding: 15px;
 }

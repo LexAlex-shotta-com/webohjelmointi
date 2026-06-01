@@ -91,51 +91,104 @@
   </article>
 
 </main>
+ <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
 
-</body>
+            background-color: #f2f4f7;
+            color: #140c0c;
+            font-family: sans-serif;
 
-<style>
-body {
-    background-color: #f2f4f7;
-    color: #140c0c;
-    margin: 0;
-    font-family: sans-serif;
-    height: 100vh;
+            display: grid;
 
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "nav main"
-        "footer footer";
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "footer footer";
 
-    grid-template-columns: 12em auto;
-    grid-template-rows: 3em auto 2em;
-}
+            grid-template-columns: 220px 1fr;
+            grid-template-rows: 80px 1fr 60px;
+        }
 
-header {
-    grid-area: header;
-    background: #1377e9;
-    padding: 10px;
-}
+        header {
+            grid-area: header;
 
-nav {
-    grid-area: nav;
-    background: #0c0d0e;
-    padding: 10px;
-}
+            background-color: #1377e9;
+            color: white;
 
-main {
-    grid-area: main;
-    padding: 10px;
-}
+            padding: 20px;
+        }
 
-footer {
-    grid-area: footer;
-    background: #003677;
-    padding: 5px;
-    text-align: center;
-}
-</style>
+        nav {
+            grid-area: nav;
+
+            background-color: #0c0d0e;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #66b3ff;
+        }
+
+        main {
+            grid-area: main;
+
+            padding: 20px;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+
+            background-color: #003677;
+            color: white;
+
+            padding: 15px;
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 
 </head>
 <body>

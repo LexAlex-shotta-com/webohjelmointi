@@ -36,7 +36,104 @@
     <a href="flex.html">Flex</a>
 
 </aside>
+ <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
 
+            background-color: #f2f4f7;
+            color: #140c0c;
+            font-family: sans-serif;
+
+            display: grid;
+
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "footer footer";
+
+            grid-template-columns: 220px 1fr;
+            grid-template-rows: 80px 1fr 60px;
+        }
+
+        header {
+            grid-area: header;
+
+            background-color: #1377e9;
+            color: white;
+
+            padding: 20px;
+        }
+
+        nav {
+            grid-area: nav;
+
+            background-color: #0c0d0e;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #66b3ff;
+        }
+
+        main {
+            grid-area: main;
+
+            padding: 20px;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+
+            background-color: #003677;
+            color: white;
+
+            padding: 15px;
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <main>
 
     <h2>Tervetuloa</h2>
@@ -55,12 +152,6 @@
 
 </footer>
 
-</body>
-    <section>Työkalupalkki</section>
-    <nav>Päänavigaatio</nav>
-    <main>Sisältöalue</main>
-    <aside>Sivupalkki</aside>
-    <footer>Statuspalkki</footer>
 </body>
 
 </html>
